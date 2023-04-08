@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./lista.component.css']
 })
 export class ListaComponent {
-
+  alumnos: Array<string> = [
+    'Jorge',
+    'Alejandro',
+    'Pedro',
+    'Mirta'
+  ];
 }
