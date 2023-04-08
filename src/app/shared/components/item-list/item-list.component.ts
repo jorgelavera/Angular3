@@ -5,7 +5,9 @@ import { Component, Input } from '@angular/core';
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.css']
 })
+
 export class ItemListComponent {
-  @Input()
-  items: string[] = [];
+  @Input() items: any = [];
+  isOk = 'isOk';
+  isNotOk = 'isNotOk';
 }
