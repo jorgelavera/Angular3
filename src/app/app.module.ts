@@ -7,6 +7,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ListaComponent } from './lista/lista.component';
 import { ItemListComponent } from './shared/components/item-list/item-list.component';
+import { ReactiveFormsComponent } from './forms/reactive-forms/reactive-forms.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ItemListComponent } from './shared/components/item-list/item-list.compo
     SidebarComponent,
     ToolbarComponent,
     ListaComponent,
-    ItemListComponent
+    ItemListComponent,
+    ReactiveFormsComponent
   ],
   imports: [
-  BrowserModule,
-    AppRoutingModule
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

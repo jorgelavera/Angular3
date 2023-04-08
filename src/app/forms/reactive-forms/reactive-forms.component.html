@@ -1,0 +1,41 @@
+<div class="card container">
+    <div class="card-body">
+        <h1>Actualización de datos del Alumno</h1>
+        <form [formGroup]="formAlumno" autocomplete="off" class="row g-3" (ngSubmit)="onSubmit()">
+            <div class="col-md-6">
+                <label for="inputNombres" class="form-label">Nombres</label>
+                <input [formControl]="nameControl" type="text" class="form-control is-invalid" id="inputNombres" 
+                [ngClass]="{ 'is-invalid': nameControl.invalid }">
+                <div *ngIf="nameControl.hasError('required')" class="invalid-feedback">Debe ingresar un nombre</div>
+                <div *ngIf="nameControl.hasError('maxLength')" class="invalid-feedback">Máximo 60 caracteres</div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputApellidos" class="form-label">Apellidos</label>
+                <input [formControl]="lastNameControl" type="text" class="form-control is-invalid" id="inputApellidos" 
+                [ngClass]="{ 'is-invalid': lastNameControl.invalid }">
+                <div *ngIf="lastNameControl.hasError('required')" class="invalid-feedback">Debe ingresar un apellido</div>
+                <div *ngIf="lastNameControl.hasError('maxLength')" class="invalid-feedback">Máximo 60 caracteres</div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input 
+                [formControl]="emailControl"
+                type="email" 
+                [ngClass]="{ 'is-invalid': emailControl.invalid }"
+                class="form-control is-invalid" 
+                id="inputEmail" >
+                <div *ngIf="emailControl.hasError('required')" class="invalid-feedback">Debe ingresar un email</div>
+                <div *ngIf="emailControl.hasError('email')" class="invalid-feedback">Email incorrecto</div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-check">
+                    <input formcontrolname="tieneBeca" type="checkbox" class="form-check-input" id="HasScholarship">
+                    <label for="HasScholarship" class="form-check-label">Tiene la CoderBeca activa</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar datos</button>
+            </div>
+        </form>
+    </div>
+</div>
