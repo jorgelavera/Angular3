@@ -9,6 +9,7 @@ import { ListaComponent } from './lista/lista.component';
 import { ItemListComponent } from './shared/components/item-list/item-list.component';
 import { ReactiveFormsComponent } from './forms/reactive-forms/reactive-forms.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
