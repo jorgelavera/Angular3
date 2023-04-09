@@ -10,6 +10,8 @@ import { ItemListComponent } from './shared/components/item-list/item-list.compo
 import { ReactiveFormsComponent } from './forms/reactive-forms/reactive-forms.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModuloMaterialModule } from './modules/material.module';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ModuloMaterialModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

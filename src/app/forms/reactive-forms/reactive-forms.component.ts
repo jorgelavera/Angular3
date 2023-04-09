@@ -24,7 +24,7 @@ export class ReactiveFormsComponent {
     if (this.formAlumno.valid) {
       //por ahora nada
     } else {
-      alert('Faltan datos');
+      alert('Revise los datos del formulario');
     }
   }
 }

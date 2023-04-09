@@ -10,4 +10,8 @@ export class Alumno {
     get fullName(): string {
         return this.firstName + ' ' + this.lastName;
     }
+
+    editar(ev: PointerEvent) {
+      this.HasScholarship = !this.HasScholarship
+    }
   }

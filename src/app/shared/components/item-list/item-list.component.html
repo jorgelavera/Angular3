@@ -1,5 +1,7 @@
 <ul>
     <li *ngFor="let item of items; let i = index" [ngClass]="item.HasScholarship ? isOk : isNotOk ">
         {{ i + 1 }} {{ item.fullName | uppercase }}
+        <button class="btn btn-primary" (click)="item.editar($event)">
+            {{ item.HasScholarship ? 'Sacar Beca' : 'Devolver Beca'}}</button>
     </li>
 </ul>

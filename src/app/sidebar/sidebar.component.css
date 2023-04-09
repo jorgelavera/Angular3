@@ -1,0 +1,13 @@
+.sidebar-container {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .sidebar-content {
+    padding: 1rem;
+  }
+  
+  .sidebar {
+    padding: 20px;
+  }
+  
